@@ -741,7 +741,10 @@ body.welcome::-webkit-scrollbar {
   max-width: 1000px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .footer__link--wrapper {
   display: flex;
@@ -864,5 +867,43 @@ body.welcome::-webkit-scrollbar {
     margin: 20px auto;
     padding: 0px;
     width: auto;
+  }
+  
+}
+
+@media screen and (max-height: 650px) { 
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+  }
+}
+
+
+@media screen and (max-height: 550px) { 
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-height: 500px) { 
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
   }
 }
