@@ -645,8 +645,8 @@ body.welcome::-webkit-scrollbar {
   border-radius: 4px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url('images/pic4.jpg');
   background-size: cover;
-  position: relative;
   box-shadow: 2px 2px 2px 2px rgba(247, 112, 98, .9);
+  position: relative;
   color: white;
 }
 
@@ -711,7 +711,7 @@ body.welcome::-webkit-scrollbar {
     width: 300px;
   }
 
-    .services__card:nth-child(1){
+  .services__card:nth-child(2){
     width: 300px;
   }
   
