@@ -1,7 +1,6 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
 
-
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
@@ -9,6 +8,7 @@ menu.addEventListener('click', function() {
 
 setTimeout(function() {
     document.body.style.overflowY = "scroll";
+
 }, 5000);
 
 

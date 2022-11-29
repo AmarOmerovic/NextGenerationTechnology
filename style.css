@@ -213,7 +213,6 @@
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 90vh;
   background-color: #141414;
   z-index: 1;
   width: 100%;
@@ -340,7 +339,10 @@ body.welcome::-webkit-scrollbar {
   border-radius: 50%;
   animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
 }
-   
+
+.social__media,
+.footer__container,
+.services__card,
 .navbar, 
 .main__btn{
   opacity: 0;
@@ -447,6 +449,7 @@ body.welcome::-webkit-scrollbar {
 
 
 .main {
+  margin-top: 4rem;
   background-color: #141414;
 }
 
@@ -456,7 +459,7 @@ body.welcome::-webkit-scrollbar {
   align-items: center;
   justify-self: center;
   margin: 0 auto;
-  height: 90vh;
+  height: max-content;
   background-color: #141414;
   z-index: 1;
   width: 100%;
@@ -603,7 +606,7 @@ body.welcome::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: max-content;
 }
 
 .services h1 {
@@ -871,39 +874,3 @@ body.welcome::-webkit-scrollbar {
   
 }
 
-@media screen and (max-height: 650px) { 
-  .footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-  }
-}
-
-
-@media screen and (max-height: 550px) { 
-  .footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-  }
-}
-
-@media screen and (max-height: 500px) { 
-  .footer__links {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 300px;
-  }
-}
