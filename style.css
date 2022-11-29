@@ -299,10 +299,18 @@
   width: 80%;
 }
 
+
 body.welcome {
+  overflow: hidden;
   background: #141414;
-  overflow: visible;
   -webkit-font-smoothing: antialiased;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body.welcome::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .welcome .splash {
@@ -314,7 +322,6 @@ body.welcome {
   top: 100%;
   display: block;
   box-sizing: initial;
-  overflow: hidden;
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
@@ -327,7 +334,6 @@ body.welcome {
   position: absolute;
   left: 50%;
   top: 50%;
-  overflow: hidden;
   opacity: 0;
   transform: translate(-50%, -50%);
   border-radius: 50%;
