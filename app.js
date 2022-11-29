@@ -1,11 +1,5 @@
 const menu = document.querySelector('#mobile-menu')
 const menuLinks = document.querySelector('.navbar__menu')
-const welcome = document.querySelector('welcome')
-
-
-window.onbeforeunload = function () {
-    window.scrollTo(0,0);
-};
 
 
 menu.addEventListener('click', function() {
@@ -15,6 +9,18 @@ menu.addEventListener('click', function() {
 
 setTimeout(function() {
     document.body.style.overflowY = "scroll";
-}, 5200);
+}, 5000);
 
-window.onunload = function(){ window.scrollTo(0,0); }
+
+
+
+history.scrollRestoration = 'manual';
+
+
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}

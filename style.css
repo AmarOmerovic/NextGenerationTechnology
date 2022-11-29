@@ -16,6 +16,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: 0 1px 1px 0 rgba(247, 112, 98, .2);
   }
   
   .navbar__container {
